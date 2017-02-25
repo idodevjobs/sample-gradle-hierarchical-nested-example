@@ -1,0 +1,12 @@
+apply plugin: 'spring-boot'
+
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+    }
+}
+
+dependencies {
+    compile project (':service')
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+}
